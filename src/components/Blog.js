@@ -31,14 +31,14 @@ const allBlogs = [
     date: 'Apr 2, 2024',
   },
   {
-    img: 'https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?w=600&h=400&fit=crop&crop=center',
+    img: 'https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?w=600&h=400&fit=crop&crop=focalpoint&fp-y=0.38&fp-x=0.5',
     author: 'Admin',
     category: 'Health',
     title: 'Essential vaccinations every pet owner should know about.',
     date: 'May 10, 2024',
   },
   {
-    img: 'https://images.unsplash.com/photo-1601979031925-424e53b6caaa?w=600&h=400&fit=crop&crop=center',
+    img: 'https://images.unsplash.com/photo-1601979031925-424e53b6caaa?w=600&h=400&fit=crop&crop=focalpoint&fp-y=0.38&fp-x=0.5',
     author: 'Admin',
     category: 'Nutrition',
     title: 'How to choose the right diet for your dog\'s breed.',
