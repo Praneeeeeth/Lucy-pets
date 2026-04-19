@@ -1,51 +1,7 @@
 import React from 'react';
 import PawHeartIcon from './PawHeartIcon';
 
-/* 
-  Simple paw frame: a circular image with a decorative paw-print border
-  drawn using CSS + a paw SVG outline layered on top.
-  Much more reliable than SVG clipPath which had rendering issues.
-*/
-const PawFrameImg = ({ src, alt, size = 120, color = '#E91E8C', dashed = true }) => {
-  const strokeVal = dashed ? '8,5' : 'none';
-  return (
-    <div className="paw-img-frame" style={{ width: size, height: size, position: 'relative', flexShrink: 0 }}>
-      {/* Circular image */}
-      <img
-        src={src}
-        alt={alt}
-        style={{
-          width: '100%',
-          height: '100%',
-          borderRadius: '50%',
-          objectFit: 'cover',
-          objectPosition: 'center top',
-          display: 'block',
-        }}
-      />
-      {/* SVG paw outline drawn over the circle */}
-      <svg
-        viewBox="0 0 120 120"
-        xmlns="http://www.w3.org/2000/svg"
-        style={{ position: 'absolute', top: -10, left: -10, width: size + 20, height: size + 20, pointerEvents: 'none' }}
-      >
-        {/* Main circular border */}
-        <circle
-          cx="60" cy="65" r="48"
-          fill="none"
-          stroke={color}
-          strokeWidth="3.5"
-          strokeDasharray={strokeVal}
-        />
-        {/* Toe beans */}
-        <circle cx="28" cy="22" r="9" fill="none" stroke={color} strokeWidth="3" strokeDasharray={strokeVal} />
-        <circle cx="52" cy="12" r="9" fill="none" stroke={color} strokeWidth="3" strokeDasharray={strokeVal} />
-        <circle cx="76" cy="12" r="9" fill="none" stroke={color} strokeWidth="3" strokeDasharray={strokeVal} />
-        <circle cx="100" cy="22" r="9" fill="none" stroke={color} strokeWidth="3" strokeDasharray={strokeVal} />
-      </svg>
-    </div>
-  );
-};
+
 
 const About = () => {
   return (

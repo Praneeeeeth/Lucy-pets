@@ -1,15 +1,7 @@
 import React, { useState } from 'react';
 import PawHeartIcon from './PawHeartIcon';
 
-const PawIcon = ({ size = 16, color = 'white' }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill={color} xmlns="http://www.w3.org/2000/svg">
-    <circle cx="6" cy="6" r="2.2" />
-    <circle cx="18" cy="6" r="2.2" />
-    <circle cx="3.5" cy="11" r="2" />
-    <circle cx="20.5" cy="11" r="2" />
-    <path d="M12 8.5c-4.5 0-7 3-6.5 6.5.5 3 3.5 5 6.5 5s6-2 6.5-5c.5-3.5-2-6.5-6.5-6.5z" />
-  </svg>
-);
+
 
 const Newsletter = () => {
   const [email, setEmail] = useState('');
